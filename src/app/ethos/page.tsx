@@ -44,7 +44,7 @@ export default function EthosPage() {
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
                     <div className="md:col-span-4 sticky top-32 h-fit">
                         <span className="font-mono text-xs text-signal uppercase tracking-widest block mb-4">
-                            01 / The Crisis
+                            The Crisis
                         </span>
                         <p className="font-mono text-xs text-newsprint/60 leading-relaxed max-w-[240px]">
                             The internet was born as a library. It turned into a shopping mall. We are returning it to the library.
