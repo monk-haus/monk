@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ReactLenis } from "./lenis-provider";
 import Navigation from "@/components/Navigation";
+import PageTransition from "@/components/PageTransition";
+import Preloader from "@/components/Preloader";
 
 export const viewport: Viewport = {
   themeColor: "#0A0A0A",
@@ -81,10 +83,13 @@ export default function RootLayout({
     <html lang="en" className="antialiased">
       <body>
         <div className="noise-overlay" />
+        <Preloader />
         <ReactLenis root>
           <div>
             <Navigation />
-            {children}
+            <PageTransition>
+              {children}
+            </PageTransition>
           </div>
         </ReactLenis>
       </body>
