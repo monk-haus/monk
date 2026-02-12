@@ -40,6 +40,15 @@ const archive = [
         slug: "sort-lat",
         image: "/assets/images/project-4.webp",
         status: "Public"
+    },
+    {
+        id: "05",
+        client: "IFE INSPIRES",
+        category: "Strategic Identity",
+        year: "2026",
+        slug: "ife-inspires",
+        image: "/assets/images/project-5.webp",
+        status: "Public"
     }
 ];
 

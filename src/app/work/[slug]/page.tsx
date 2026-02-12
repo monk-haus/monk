@@ -76,6 +76,24 @@ const projects = [
         services: ["Interface Design", "Contextual Logic", "Performance Strategy", "Full-Stack Build"],
         context: "Standard link profiles are biological fossils—stagnant, manual, and devoid of real-time context. SORT.LAT is a reactive engine designed to solve curation fatigue. It tracks link velocity and user momentum, automatically rearranging the profile in real-time to surface the most relevant content at the exact moment it's needed.",
         outcome: "We engineered a zero-config platform that eliminates layout shift and curation overhead. The interface is optimized for speed, pre-assembling the profile server-side before it reaches the viewport. By removing the friction of manual management, we created a self-optimizing digital presence that adapts to the creator's momentum instantly. No loading states. no manual dragging. Just pure, reactive flow."
+    },
+    {
+        slug: "ife-inspires",
+        id: "05",
+        client: "IFE INSPIRES",
+        title: "The Prism of Purpose",
+        category: "Strategic Identity",
+        year: "2026",
+        url: "https://ifeinspires.com",
+        mainImage: "/assets/images/project-5.webp",
+        detailImages: [
+            "/assets/images/project-5-1.webp",
+            "/assets/images/project-5-2.webp",
+            "/assets/images/project-5-3.webp"
+        ],
+        services: ["Brand Strategy", "Digital Architecture", "Visual Identity", "Content Systems"],
+        context: "Leadership is a currency of trust, but digital presence often fails to capture the nuance of human influence. Ife Oyelade required a platform that wasn't just a portfolio, but a strategic instrument—a digital prism that could refract her multi-dimensional expertise in law, business, and transformation into a singular, cohesive narrative.",
+        outcome: "We engineered a platform centered on the INSPIRE Framework™—translating abstract methodology into a structured digital experience. By utilizing a clean, high-impact typographic system and a logic-driven content hierarchy, we created a space where thought leadership is operationalized. The result is a digital ecosystem that doesn't just display authority, but demonstrates it."
     }
 ];
 
