@@ -11,7 +11,7 @@ const archive = [
         category: "Fine Art Photography",
         year: "2025",
         slug: "gaplens",
-        image: "/assets/images/project-1.webp",
+        image: "/assets/images/gaplens-work.webp",
         status: "Public"
     },
     {
@@ -20,7 +20,7 @@ const archive = [
         category: "Editorial Curation",
         year: "2026",
         slug: "naath-models",
-        image: "/assets/images/project-2.webp",
+        image: "/assets/images/naath-work.webp",
         status: "Public"
     },
     {
@@ -29,7 +29,7 @@ const archive = [
         category: "Adversarial Engine",
         year: "2025",
         slug: "ctrl-build",
-        image: "/assets/images/project-3.webp",
+        image: "/assets/images/ctrl-build-work.webp",
         status: "Public"
     },
     {
@@ -38,7 +38,7 @@ const archive = [
         category: "Reactive Identity",
         year: "2026",
         slug: "sort-lat",
-        image: "/assets/images/project-4.webp",
+        image: "/assets/images/sort-lat-work.webp",
         status: "Public"
     },
     {
@@ -47,7 +47,7 @@ const archive = [
         category: "Strategic Identity",
         year: "2026",
         slug: "ife-inspires",
-        image: "/assets/images/project-5.webp",
+        image: "/assets/images/ifeinspires-work.webp",
         status: "Public"
     }
 ];
