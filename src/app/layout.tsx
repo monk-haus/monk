@@ -82,7 +82,6 @@ export default function RootLayout({
       <body>
         <div className="noise-overlay" />
         <ReactLenis root>
-          {/* Wrapping children in a div resolves the type mismatch error */}
           <div>
             <Navigation />
             {children}

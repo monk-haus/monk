@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
-// --- DATA: THE ARCHIVE (Database) ---
 const projects = [
     {
         slug: "gaplens",
@@ -146,9 +145,6 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
     return (
         <main className="relative w-full bg-void min-h-screen cursor-crosshair overflow-x-hidden selection:bg-signal selection:text-void">
 
-            {/* =========================================
-          SECTION 1: HERO (THE ARTIFACT)
-      ========================================= */}
             <section className="relative w-full h-[80vh] md:h-screen">
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -182,9 +178,6 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                 </div>
             </section>
 
-            {/* =========================================
-          SECTION 2: THE REPORT (CONTENT)
-      ========================================= */}
             <section className="relative w-full px-4 md:px-6 py-24 md:py-32 border-b border-newsprint/10">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
 
@@ -234,7 +227,6 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                         </div>
                     </div>
 
-                    {/* --- RIGHT COL: THE NARRATIVE --- */}
                     <div className="lg:col-span-8 space-y-24">
                         <div>
                             <span className="font-mono text-xs text-signal uppercase tracking-widest block mb-6">
@@ -254,13 +246,10 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                             </p>
                         </div>
 
-                        {/* --- VISUAL EVIDENCE --- */}
                         <div className="space-y-8">
                             <span className="font-mono text-xs text-newsprint/40 uppercase tracking-widest block border-b border-newsprint/10 pb-2">
                                 Visual_Reference
                             </span>
-
-                            {/* Image 1 - Full Width */}
                             <div className="relative w-full aspect-video bg-newsprint/5">
                                 <Image
                                     src={project.detailImages[0]}
@@ -270,7 +259,6 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                                 />
                             </div>
 
-                            {/* Grid of 2 */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="relative w-full aspect-square bg-newsprint/5">
                                     <Image
@@ -296,9 +284,6 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                 </div>
             </section>
 
-            {/* =========================================
-          SECTION 3: NEXT PROJECT
-      ========================================= */}
             <section className="w-full border-t border-newsprint/10">
                 <Link href={`/work/${nextProject.slug}`} className="group block relative w-full h-[50vh] overflow-hidden">
                     <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-40 transition-opacity duration-300">
