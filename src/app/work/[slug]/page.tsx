@@ -12,7 +12,7 @@ const projects = [
         category: "Fine Art Photography",
         year: "2025",
         url: "https://gaplens.com",
-        mainImage: "/assets/images/project-1.webp",
+        mainImage: "/assets/images/gaplens-hero.webp",
         detailImages: [
             "/assets/images/project-1-1.webp",
             "/assets/images/project-1-2.webp",
@@ -30,7 +30,7 @@ const projects = [
         category: "Editorial Curation",
         year: "2026",
         url: "https://naathmodels.com",
-        mainImage: "/assets/images/project-2.webp",
+        mainImage: "/assets/images/naath-hero.webp",
         detailImages: [
             "/assets/images/project-2-1.webp",
             "/assets/images/project-2-2.webp",
