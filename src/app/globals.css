@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-void: #0A0A0A;
+  --color-newsprint: #E3E0D6;
+  --color-bio: #CCFF00;
+  --color-signal: #FF3300;
+
+  --font-alpina: 'GT Alpina Typewriter', serif;
+  --font-mono: 'ABC Diatype Mono', monospace;
+
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.img-grain {
+  filter: grayscale(100%) contrast(120%) brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.group:hover .img-grain {
+  filter: grayscale(0%) contrast(100%) brightness(100%);
+}
