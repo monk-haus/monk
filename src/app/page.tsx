@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Home() {
   const tickerItems = [
-    "/// NOT FOR EVERYONE",
+    "/// VISCERAL WEB",
     "/// ANTI-TEMPLATE",
-    "/// DIGITAL DEBRIS",
+    "/// HIGH FIDELITY",
     "/// EST. 2025",
-    "/// NO COOKIES",
-    "/// RAW OUTPUT",
+    "/// PURE SIGNAL",
+    "/// BESPOKE DESIGN",
   ];
 
   return (
@@ -17,12 +17,12 @@ export default function Home() {
         <div className="absolute top-20 right-4 md:top-24 md:right-6 z-0 text-right">
           <div className="font-mono text-[10px] md:text-xs leading-tight text-newsprint/60 uppercase tracking-widest space-y-4">
             <p>
-              Status:<br />
-              <span className="text-newsprint">Heavy Load</span>
+              Studio:<br />
+              <span className="text-newsprint">Monk Haus</span>
             </p>
             <p>
-              Origin:<br />
-              <span className="text-newsprint">The Void</span>
+              Focus:<br />
+              <span className="text-newsprint">Digital Artifacts</span>
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function Home() {
               Raw <br /> Material
             </h2>
             <div className="mt-8 md:mt-0 font-mono text-xs uppercase tracking-widest text-void/60">
-              [ Operating_Principles_v2 ]
+              [ Our Ethos ]
             </div>
           </div>
 
@@ -160,9 +160,9 @@ export default function Home() {
             <div className="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
 
             <div className="z-10 text-center md:text-left">
-              <h3 className="font-mono text-lg uppercase tracking-widest mb-2">Ready to break something?</h3>
+              <h3 className="font-mono text-lg uppercase tracking-widest mb-2">Have a project?</h3>
               <p className="font-mono text-xs text-newsprint/60 max-w-md">
-                The queue is open. Initiate the protocol.
+                The studio is open. Let's build something visceral.
               </p>
             </div>
 
