@@ -141,7 +141,6 @@ export default function ContactForm() {
 
             {state.message && (
                 <div className={`mt-8 p-4 border font-mono text-xs uppercase tracking-widest ${state.success ? 'border-bio/50 text-bio' : 'border-signal/50 text-signal'}`}>
-                    <span className="mr-4">[{state.success ? 'SUCCESS' : 'ERROR'}]</span>
                     {state.message}
                 </div>
             )}

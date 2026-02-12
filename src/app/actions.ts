@@ -25,7 +25,7 @@ export async function sendContactEmail(prevState: any, formData: FormData) {
         const { data, error } = await resend.emails.send({
             from: 'Monk Haus <onboarding@resend.dev>',
             to: ['hello@monk.haus'],
-            subject: `New Transmission: ${projectType} from ${name}`,
+            subject: `New Message: ${projectType} from ${name}`,
             replyTo: email,
             text: `
         New Contact From Monk Haus Website
@@ -42,12 +42,12 @@ export async function sendContactEmail(prevState: any, formData: FormData) {
 
         if (error) {
             console.error('Resend Error:', error);
-            return { success: false, message: 'Transmission failed. Signal lost.' };
+            return { success: false, message: 'Something went wrong. Please try again.' };
         }
 
-        return { success: true, message: 'Transmission received. Stand by.' };
+        return { success: true, message: 'Message sent. We will be in touch shortly.' };
     } catch (error) {
         console.error('Server Error:', error);
-        return { success: false, message: 'System error. Transmission aborted.' };
+        return { success: false, message: 'System error. Please try again.' };
     }
 }
