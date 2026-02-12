@@ -61,7 +61,7 @@ export default function ContactPage() {
                                 <p className="font-mono text-sm text-newsprint/80 leading-relaxed">
                                     EET (UTC+2)<br />
                                     <span suppressHydrationWarning>
-                                        {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+                                        {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Bucharest' })}
                                     </span>
                                 </p>
                             </div>
