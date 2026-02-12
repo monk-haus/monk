@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
     title: "Contact",
@@ -17,10 +18,7 @@ export default function ContactPage() {
                 <div className="max-w-screen-xl mx-auto flex flex-col justify-end min-h-[30vh]">
                     <div className="flex justify-between items-end mb-8">
                         <span className="font-mono text-[10px] md:text-xs text-newsprint/60 uppercase tracking-widest">
-                            Comms: Open
-                        </span>
-                        <span className="font-mono text-[10px] md:text-xs text-newsprint/60 uppercase tracking-widest">
-                            Status: Online
+                            Get in Touch
                         </span>
                     </div>
 
@@ -39,20 +37,11 @@ export default function ContactPage() {
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
                     <div className="lg:col-span-12 flex flex-col items-start gap-12">
                         <p className="font-alpina text-2xl md:text-3xl text-newsprint leading-tight max-w-2xl">
-                            We are currently accepting new projects.
-                            <br />
-                            Email us directly to initiate a conversation.
+                            Start a conversation. <br />
+                            Fill the form below or email us directly.
                         </p>
 
-                        <a
-                            href="mailto:hello@monk.haus"
-                            className="group relative inline-block"
-                        >
-                            <span className="font-alpina text-5xl md:text-8xl text-newsprint group-hover:text-signal transition-colors duration-300">
-                                hello@monk.haus
-                            </span>
-                            <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-newsprint/20 group-hover:bg-signal transition-colors duration-300"></span>
-                        </a>
+                        <ContactForm />
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full pt-12 border-t border-newsprint/10">
                             <div>
@@ -94,7 +83,6 @@ export default function ContactPage() {
 
             <footer className="w-full border-t border-newsprint/10 py-8 px-4 md:px-6">
                 <div className="max-w-screen-xl mx-auto flex justify-between items-center font-mono text-[10px] uppercase tracking-widest text-newsprint/40">
-                    <span>Mode: Direct_Link</span>
                     <span>Monk Haus © 2026</span>
                 </div>
             </footer>
