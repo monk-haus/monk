@@ -18,12 +18,12 @@ export default function EthosPage() {
                 <div className="absolute top-20 right-4 md:top-24 md:right-6 z-0 text-right">
                     <div className="font-mono text-[10px] md:text-xs leading-tight text-newsprint/60 uppercase tracking-widest space-y-4">
                         <p>
-                            Doc_Type:<br />
+                            Document:<br />
                             <span className="text-newsprint">Manifesto</span>
                         </p>
                         <p>
-                            Version:<br />
-                            <span className="text-newsprint">2.0.4</span>
+                            Date:<br />
+                            <span className="text-newsprint">2026</span>
                         </p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ export default function EthosPage() {
                     <div className="grid grid-cols-1 gap-16">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start group">
                             <div className="md:col-span-2 font-mono text-xs text-signal uppercase tracking-widest pt-2">
-                                Law_01
+                                01 / Craft
                             </div>
                             <div className="md:col-span-10 border-t border-void/10 pt-2">
                                 <h3 className="font-alpina text-4xl md:text-6xl mb-6 group-hover:italic transition-all">
@@ -99,7 +99,7 @@ export default function EthosPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start group">
                             <div className="md:col-span-2 font-mono text-xs text-signal uppercase tracking-widest pt-2">
-                                Law_02
+                                02 / Imperfection
                             </div>
                             <div className="md:col-span-10 border-t border-void/10 pt-2">
                                 <h3 className="font-alpina text-4xl md:text-6xl mb-6 group-hover:italic transition-all">
@@ -113,7 +113,7 @@ export default function EthosPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start group">
                             <div className="md:col-span-2 font-mono text-xs text-signal uppercase tracking-widest pt-2">
-                                Law_03
+                                03 / Impact
                             </div>
                             <div className="md:col-span-10 border-t border-void/10 pt-2">
                                 <h3 className="font-alpina text-4xl md:text-6xl mb-6 group-hover:italic transition-all">
@@ -130,31 +130,29 @@ export default function EthosPage() {
 
             <section className="relative w-full bg-void text-newsprint py-32 px-4 md:px-6">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 items-center">
-                    <div className="relative w-full aspect-square md:aspect-auto md:h-[400px] border-2 border-newsprint p-8 flex flex-col justify-between select-none">
-                        <div className="flex justify-between items-start">
-                            <span className="font-mono text-xs text-newsprint uppercase tracking-widest">
-                                Sys_Config
+                    <div className="relative w-full aspect-square md:aspect-auto md:h-[400px] border border-newsprint/20 p-8 flex flex-col justify-between hover:bg-newsprint/5 transition-colors duration-500">
+                        <div className="space-y-6">
+                            <span className="font-mono text-xs text-signal uppercase tracking-widest block">
+                                The Process
                             </span>
-                            <div className="w-4 h-4 bg-bio animate-pulse"></div>
+                            <h3 className="font-alpina text-3xl md:text-4xl leading-tight">
+                                From Chaos to <span className="italic text-newsprint/50">Clarity</span>.
+                            </h3>
                         </div>
 
-                        <div className="flex flex-col gap-4">
-                            <div className="border-b border-newsprint/20 pb-2 flex justify-between items-end">
-                                <span className="font-mono text-xs text-newsprint/60 uppercase tracking-widest">Input</span>
-                                <span className="font-mono text-lg">CHAOS</span>
+                        <div className="space-y-4 font-mono text-xs text-newsprint/60 leading-relaxed uppercase tracking-widest">
+                            <div className="flex justify-between items-center border-b border-newsprint/10 pb-2">
+                                <span>Input</span>
+                                <span className="text-newsprint">Raw Concept</span>
                             </div>
-                            <div className="border-b border-newsprint/20 pb-2 flex justify-between items-end">
-                                <span className="font-mono text-xs text-newsprint/60 uppercase tracking-widest">Process</span>
-                                <span className="font-mono text-lg">REDUCTION</span>
+                            <div className="flex justify-between items-center border-b border-newsprint/10 pb-2">
+                                <span>Method</span>
+                                <span className="text-newsprint">Reduction</span>
                             </div>
-                            <div className="border-b border-newsprint/20 pb-2 flex justify-between items-end">
-                                <span className="font-mono text-xs text-newsprint/60 uppercase tracking-widest">Output</span>
-                                <span className="font-mono text-lg text-bio">CLARITY</span>
+                            <div className="flex justify-between items-center pt-2">
+                                <span>Result</span>
+                                <span className="text-newsprint">Essential Form</span>
                             </div>
-                        </div>
-
-                        <div className="font-mono text-[10px] text-newsprint/40 uppercase tracking-widest text-right">
-                            ID: MONK_HAUS
                         </div>
                     </div>
 
