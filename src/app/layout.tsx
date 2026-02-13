@@ -1,80 +1,21 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { ReactLenis } from "./lenis-provider";
 import Navigation from "@/components/Navigation";
 import PageTransition from "@/components/PageTransition";
 import Preloader from "@/components/Preloader";
 
-const alpina = localFont({
-  src: [
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Thin.ttf",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Thin-Italic.ttf",
-      weight: "100",
-      style: "italic",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Light-Italic.ttf",
-      weight: "300",
-      style: "italic",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Regular-Italic.ttf",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Medium-Italic.ttf",
-      weight: "500",
-      style: "italic",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../fonts/GT-Alpina-Typewriter-Bold-Italic.ttf",
-      weight: "700",
-      style: "italic",
-    },
-  ],
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
   variable: "--font-alpina",
 });
 
-const mono = localFont({
-  src: [
-    {
-      path: "../fonts/ABC-Diatype-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../fonts/ABC-Diatype-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-  ],
+const uncutSans = localFont({
+  src: "../fonts/UncutSans-Variable.woff2",
   variable: "--font-mono",
 });
 
@@ -153,7 +94,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${alpina.variable} ${mono.variable} antialiased`}>
+    <html lang="en" className={`${instrumentSerif.variable} ${uncutSans.variable} antialiased`}>
       <body>
         <div className="noise-overlay" />
         <Preloader />
