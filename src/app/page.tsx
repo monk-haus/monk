@@ -225,7 +225,7 @@ export default function Home() {
             <span className="font-mono text-xs text-newsprint/40 mb-4 block ml-2 uppercase tracking-widest">
               Inquiries
             </span>
-            <h2 className="font-alpina text-[8vw] md:text-[12vw] leading-[0.8] text-newsprint group-hover:text-signal transition-colors duration-0">
+            <h2 className="font-alpina text-[7.5vw] lg:text-[6.5vw] leading-[0.8] text-newsprint group-hover:text-signal transition-colors duration-0">
               hello@monk.haus
             </h2>
           </a>
