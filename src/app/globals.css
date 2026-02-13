@@ -6,8 +6,8 @@
   --color-bio: #CCFF00;
   --color-signal: #FF3300;
 
-  --font-alpina: 'GT Alpina Typewriter', serif;
-  --font-mono: 'ABC Diatype Mono', monospace;
+  --font-alpina: var(--font-alpina), serif;
+  --font-mono: var(--font-mono), monospace;
 
   --animate-marquee: marquee 25s linear infinite;
 
