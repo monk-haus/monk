@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Instrument_Serif } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ReactLenis } from "./lenis-provider";
 import Navigation from "@/components/Navigation";
@@ -102,6 +103,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${instrumentSerif.variable} ${uncutSans.variable} antialiased`}>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-LLP85TEFBS"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('consent', 'default', {
+            'analytics_storage': 'granted'
+          });
+          gtag('config', 'G-LLP85TEFBS');
+        `}
+      </Script>
       <body>
         <script
           type="application/ld+json"
