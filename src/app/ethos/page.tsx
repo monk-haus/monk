@@ -9,6 +9,14 @@ export const metadata: Metadata = {
         description: "The internet was born as a library. It turned into a shopping mall. We are returning it to the library.",
         url: "https://monk.haus/ethos",
     },
+    twitter: {
+        card: "summary_large_image",
+        title: "Ethos | MONK HAUS",
+        description: "Operating Principles. Against perfection. Digital decay. Visceral utility.",
+    },
+    alternates: {
+        canonical: "https://monk.haus/ethos",
+    },
 };
 
 export default function EthosPage() {

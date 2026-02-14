@@ -128,6 +128,15 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
                 },
             ],
         },
+        twitter: {
+            card: "summary_large_image",
+            title: `${project.client} | MONK HAUS`,
+            description: project.context,
+            images: [project.mainImage],
+        },
+        alternates: {
+            canonical: `https://monk.haus/work/${project.slug}`,
+        },
     };
 }
 
@@ -144,6 +153,24 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
 
     return (
         <main className="relative w-full bg-void min-h-screen cursor-crosshair overflow-x-hidden selection:bg-signal selection:text-void">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "CreativeWork",
+                        name: project.title,
+                        description: project.context,
+                        author: {
+                            "@type": "Organization",
+                            name: "Monk Haus",
+                        },
+                        url: `https://monk.haus/work/${project.slug}`,
+                        image: `https://monk.haus${project.mainImage}`,
+                        dateCreated: project.year,
+                    }),
+                }}
+            />
 
             <section className="relative w-full h-[80vh] md:h-screen">
                 <div className="absolute inset-0 z-0">
@@ -219,6 +246,7 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                                 <a
                                     href={project.url}
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-block w-full text-center border border-newsprint/20 py-4 font-mono text-xs uppercase tracking-widest text-newsprint hover:bg-signal hover:text-void hover:border-signal transition-all duration-0"
                                 >
                                     View Live Artifact ↗
@@ -253,7 +281,7 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                             <div className="relative w-full aspect-video bg-newsprint/5">
                                 <Image
                                     src={project.detailImages[0]}
-                                    alt="Detail view 01"
+                                    alt={`${project.client} - detail view 1`}
                                     fill
                                     className="object-cover img-grain grayscale hover:grayscale-0 transition-all duration-500"
                                 />
@@ -263,7 +291,7 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                                 <div className="relative w-full aspect-square bg-newsprint/5">
                                     <Image
                                         src={project.detailImages[1]}
-                                        alt="Detail view 02"
+                                        alt={`${project.client} - detail view 2`}
                                         fill
                                         className="object-cover img-grain grayscale hover:grayscale-0 transition-all duration-500"
                                         style={{ objectPosition: 'left' }}
@@ -272,7 +300,7 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                                 <div className="relative w-full aspect-square bg-newsprint/5">
                                     <Image
                                         src={project.detailImages[2]}
-                                        alt="Detail view 03"
+                                        alt={`${project.client} - detail view 3`}
                                         fill
                                         className="object-cover img-grain grayscale hover:grayscale-0 transition-all duration-500"
                                         style={{ objectPosition: 'center' }}

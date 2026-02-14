@@ -11,11 +11,41 @@ export const metadata: Metadata = {
         description: "Initiate contact. Project inquiries and collaboration requests.",
         url: "https://monk.haus/contact",
     },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact | MONK HAUS",
+        description: "Initiate contact. Project inquiries and collaboration requests.",
+    },
+    alternates: {
+        canonical: "https://monk.haus/contact",
+    },
 };
 
 export default function ContactPage() {
     return (
         <main className="relative w-full bg-void min-h-screen cursor-crosshair overflow-x-hidden selection:bg-signal selection:text-void">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ContactPage",
+                        name: "Contact Monk Haus",
+                        url: "https://monk.haus/contact",
+                        description: "Initiate contact. Project inquiries and collaboration requests.",
+                        mainEntity: {
+                            "@type": "Organization",
+                            name: "Monk Haus",
+                            email: "hello@monk.haus",
+                            address: {
+                                "@type": "PostalAddress",
+                                addressLocality: "Craiova",
+                                addressCountry: "RO",
+                            },
+                        },
+                    }),
+                }}
+            />
             <section className="relative pt-32 pb-12 px-4 md:px-6 border-b border-newsprint/10">
                 <div className="max-w-screen-xl mx-auto flex flex-col justify-end min-h-[30vh]">
                     <div className="flex justify-between items-end mb-8">

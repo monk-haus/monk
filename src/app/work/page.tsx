@@ -9,6 +9,14 @@ export const metadata: Metadata = {
         description: "Master Index of digital artifacts.",
         url: "https://monk.haus/work",
     },
+    twitter: {
+        card: "summary_large_image",
+        title: "Index | MONK HAUS",
+        description: "Master Index of digital artifacts.",
+    },
+    alternates: {
+        canonical: "https://monk.haus/work",
+    },
 };
 
 export default function WorkPage() {

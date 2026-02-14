@@ -23,7 +23,7 @@ const NavLink = ({ href, text, className, isCTA }: NavLinkProps) => {
 
 export default function Navigation() {
     return (
-        <nav className="pointer-events-none">
+        <nav aria-label="Main navigation" className="pointer-events-none">
             <NavLink
                 href="/"
                 text="Monk"

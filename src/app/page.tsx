@@ -1,5 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "MONK | HAUS — Digital Artifact Foundry",
+  description:
+    "Digital artifact foundry based in Craiova. We build raw, friction-heavy web experiences. No templates. No cookies. Pure signal.",
+  openGraph: {
+    title: "MONK | HAUS",
+    description: "Digital artifact foundry. We ship code.",
+    url: "https://monk.haus",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MONK | HAUS",
+    description: "Digital artifact foundry. We ship code.",
+  },
+  alternates: {
+    canonical: "https://monk.haus",
+  },
+};
 
 export default function Home() {
   const tickerItems = [
@@ -13,6 +33,19 @@ export default function Home() {
 
   return (
     <main className="relative w-full bg-void min-h-screen cursor-crosshair overflow-x-hidden selection:bg-signal selection:text-void">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Monk Haus",
+            url: "https://monk.haus",
+            description:
+              "Digital artifact foundry based in Craiova. We build raw, friction-heavy web experiences.",
+          }),
+        }}
+      />
       <section className="relative h-dvh w-full flex flex-col justify-between p-4 md:p-6 border-b border-newsprint/10">
         <div className="absolute top-20 right-4 md:top-24 md:right-6 z-0 text-right">
           <div className="font-mono text-[10px] md:text-xs leading-tight text-newsprint/60 uppercase tracking-widest space-y-4">
@@ -282,7 +315,7 @@ function WorkItem({ id, client, category, description, year, imageSrc, url }: { 
         <div className="md:col-span-4 md:col-start-8 pointer-events-none md:pointer-events-auto">
           <p className="font-mono text-sm text-newsprint/80 leading-relaxed mb-6 max-w-sm">{description}</p>
           <a href={url} target="_blank" rel="noopener noreferrer" className="block relative w-full aspect-[4/3] bg-newsprint/10 overflow-hidden">
-            <Image src={imageSrc} alt={`Artifact ${id}`} fill className="object-cover img-grain" sizes="(max-width: 768px) 100vw, 33vw" />
+            <Image src={imageSrc} alt={`${client} - ${category}`} fill className="object-cover img-grain" sizes="(max-width: 768px) 100vw, 33vw" />
             <div className="absolute inset-0 bg-void/10 mix-blend-overlay"></div>
           </a>
           <div className="mt-2 flex justify-between border-t border-newsprint/10 pt-2">

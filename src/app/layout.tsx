@@ -42,6 +42,11 @@ export const metadata: Metadata = {
     "WebGL",
     "Creative Studio",
     "Anti-Template",
+    "web design agency Romania",
+    "custom website development",
+    "creative web agency",
+    "web development Craiova",
+    "brand identity design",
   ],
   authors: [{ name: "Monk Haus", url: "https://monk.haus" }],
   creator: "Monk Haus",
@@ -78,7 +83,6 @@ export const metadata: Metadata = {
     title: "MONK | HAUS",
     description: "Digital artifact foundry. We ship code.",
     images: ["/og-image.jpg"],
-    creator: "@monk_haus",
   },
   icons: {
     icon: "/favicon.ico",
@@ -86,6 +90,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/manifest.json",
+  alternates: {
+    canonical: "https://monk.haus",
+  },
 };
 
 export default function RootLayout({
@@ -96,6 +103,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${instrumentSerif.variable} ${uncutSans.variable} antialiased`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Monk Haus",
+              url: "https://monk.haus",
+              logo: "https://monk.haus/og-image.jpg",
+              description: "Digital artifact foundry based in Craiova. We build raw, friction-heavy web experiences.",
+              sameAs: ["https://instagram.com/_monk.haus_"],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Craiova",
+                addressCountry: "RO",
+              },
+            }),
+          }}
+        />
         <div className="noise-overlay" />
         <Preloader />
         <ReactLenis root>
