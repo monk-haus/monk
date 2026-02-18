@@ -5,22 +5,22 @@ import { Metadata } from "next";
 
 const projects = [
     {
-        slug: "gaplens",
+        slug: "vault",
         id: "01",
-        client: "GAPLENS",
-        title: "The Architecture of Silence",
-        category: "Fine Art Photography",
-        year: "2025",
-        url: "https://gaplens.com",
-        mainImage: "/assets/images/gaplens-hero.webp",
+        client: "VAULT",
+        title: "The Agentic Shift",
+        category: "Agentic Commerce",
+        year: "2026",
+        url: "https://thevaulthq.io",
+        mainImage: "/assets/images/vault-hero.webp",
         detailImages: [
-            "/assets/images/project-1-1.webp",
-            "/assets/images/project-1-2.webp",
-            "/assets/images/project-1-3.webp"
+            "/assets/images/project-6-1.webp",
+            "/assets/images/project-6-2.webp",
+            "/assets/images/project-6-3.webp"
         ],
-        services: ["Creative Direction", "Web Architecture", "Visual Identity", "Interaction Design", "Full-Stack Build"],
-        context: "GapLens is a fine art photography studio dedicated to capturing the tension between material structure and ethereal light. They required an interface that behaved less like a website and more like a physical gallery—a space where the silence of the photography could be felt as much as seen.",
-        outcome: "We engineered a stark, high-contrast digital archive that prioritizes negative space over traditional navigation. By utilizing a grid system built on architectural ratios, we created a platform where each frame commands absolute focus. The user experience is intentionally slowed, forcing a deeper engagement with the textures of concrete and the geometry of shadow. The result is a digital artifact that honors the solemn purity of the GapLens lens."
+        services: ["Product Strategy", "Interface Design", "Full-Stack Build", "Platform Architecture", "Agentic Systems"],
+        context: "Modern luxury retail is caught between two failures: bloated ERPs that treat inventory as spreadsheet rows, and glossy e-commerce that strips away the intimacy of the client relationship. VAULT was conceived as the rejection of both, a unified operating system that aligns the pace of inventory with the depth of the human connection.",
+        outcome: "We engineered a dual-interface platform: a command workspace for the store team and a curated, private-client portal that feels less like software and more like a personal concierge. By embedding agentic logic into every workflow, from trend sensing to clienteling, we created a system that doesn't just manage retail, but anticipates it. The result is a high-fidelity artifact for the next era of commerce."
     },
     {
         slug: "naath-models",
@@ -41,22 +41,22 @@ const projects = [
         outcome: "We built a quiet, high-contrast archive that mirrors the restraint of a physical darkroom. By utilizing a minimalist architectural grid and unpolished visual textures, we created a space where talent isn't just displayed, but nurtured. The experience is designed to be felt as a private viewing room—an editorial statement that honors the raw, unedited reality of the 'New Vanguard'."
     },
     {
-        slug: "ctrl-build",
+        slug: "gaplens",
         id: "03",
-        client: "CTRL BUILD",
-        title: "Linguistic Deconstruction",
-        category: "Adversarial Engine",
+        client: "GAPLENS",
+        title: "The Architecture of Silence",
+        category: "Fine Art Photography",
         year: "2025",
-        url: "https://ctrl-build.com",
-        mainImage: "/assets/images/project-3.webp",
+        url: "https://gaplens.com",
+        mainImage: "/assets/images/gaplens-hero.webp",
         detailImages: [
-            "/assets/images/project-3-1.webp",
-            "/assets/images/project-3-2.webp",
-            "/assets/images/project-3-3.webp"
+            "/assets/images/project-1-1.webp",
+            "/assets/images/project-1-2.webp",
+            "/assets/images/project-1-3.webp"
         ],
-        services: ["Interface Design", "Linguistic Engineering", "Brand Identity", "Adversarial Strategy", "Full-Stack Output"],
-        context: "Artificial Intelligence is a statistical compression of the internet—a flattening of human expression into predictable patterns. CTRL BUILD is the rejection of that median. It functions as counter-surveillance, designed to deconstruct the algorithmic fingerprint of machine text and restore the irregular cadence of biological thought.",
-        outcome: "We developed a clinical, industrial interface that mirrors the efficiency of a terminal while delivering complex semantic restructuring. By injecting variance—the 'bursts' and pauses of natural writing—we engineered an engine that doesn't just bypass detection, but elevates machine output into something fundamentally human. The result is a high-utility artifact for the modern informational war."
+        services: ["Creative Direction", "Web Architecture", "Visual Identity", "Interaction Design", "Full-Stack Build"],
+        context: "GapLens is a fine art photography studio dedicated to capturing the tension between material structure and ethereal light. They required an interface that behaved less like a website and more like a physical gallery—a space where the silence of the photography could be felt as much as seen.",
+        outcome: "We engineered a stark, high-contrast digital archive that prioritizes negative space over traditional navigation. By utilizing a grid system built on architectural ratios, we created a platform where each frame commands absolute focus. The user experience is intentionally slowed, forcing a deeper engagement with the textures of concrete and the geometry of shadow. The result is a digital artifact that honors the solemn purity of the GapLens lens."
     },
     {
         slug: "sort-lat",
@@ -93,6 +93,24 @@ const projects = [
         services: ["Brand Strategy", "Digital Architecture", "Visual Identity", "Content Systems"],
         context: "Leadership is a currency of trust, but digital presence often fails to capture the nuance of human influence. Ife Oyelade required a platform that wasn't just a portfolio, but a strategic instrument—a digital prism that could refract her multi-dimensional expertise in law, business, and transformation into a singular, cohesive narrative.",
         outcome: "We engineered a platform centered on the INSPIRE Framework™—translating abstract methodology into a structured digital experience. By utilizing a clean, high-impact typographic system and a logic-driven content hierarchy, we created a space where thought leadership is operationalized. The result is a digital ecosystem that doesn't just display authority, but demonstrates it."
+    },
+    {
+        slug: "ctrl-build",
+        id: "06",
+        client: "CTRL BUILD",
+        title: "Linguistic Deconstruction",
+        category: "Adversarial Engine",
+        year: "2025",
+        url: "https://ctrl-build.com",
+        mainImage: "/assets/images/project-3.webp",
+        detailImages: [
+            "/assets/images/project-3-1.webp",
+            "/assets/images/project-3-2.webp",
+            "/assets/images/project-3-3.webp"
+        ],
+        services: ["Interface Design", "Linguistic Engineering", "Brand Identity", "Adversarial Strategy", "Full-Stack Output"],
+        context: "Artificial Intelligence is a statistical compression of the internet—a flattening of human expression into predictable patterns. CTRL BUILD is the rejection of that median. It functions as counter-surveillance, designed to deconstruct the algorithmic fingerprint of machine text and restore the irregular cadence of biological thought.",
+        outcome: "We developed a clinical, industrial interface that mirrors the efficiency of a terminal while delivering complex semantic restructuring. By injecting variance—the 'bursts' and pauses of natural writing—we engineered an engine that doesn't just bypass detection, but elevates machine output into something fundamentally human. The result is a high-utility artifact for the modern informational war."
     }
 ];
 

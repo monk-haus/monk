@@ -1,11 +1,12 @@
 import { MetadataRoute } from "next";
 
 const projectSlugs = [
-    "gaplens",
+    "vault",
     "naath-models",
-    "ctrl-build",
+    "gaplens",
     "sort-lat",
     "ife-inspires",
+    "ctrl-build",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

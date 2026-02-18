@@ -99,12 +99,12 @@ export default function Home() {
         <div className="flex flex-col">
           <WorkItem
             id="01"
-            client="GAPLENS"
-            category="Fine Art Photography"
-            description="The architecture of silence. Capturing the tension between light and shadow."
-            year="2025"
-            imageSrc="/assets/images/project-1.webp"
-            url="https://gaplens.com"
+            client="VAULT"
+            category="Agentic Commerce"
+            description="The premier operating system for modern retail. Aligning inventory pace with client intimacy."
+            year="2026"
+            imageSrc="/assets/images/project-6.webp"
+            url="https://thevaulthq.io"
           />
           <WorkItem
             id="02"
@@ -117,12 +117,12 @@ export default function Home() {
           />
           <WorkItem
             id="03"
-            client="CTRL BUILD"
-            category="Adversarial Engine"
-            description="Neural deconstruction of algorithmic patterns. Restoring the human cadence."
+            client="GAPLENS"
+            category="Fine Art Photography"
+            description="The architecture of silence. Capturing the tension between light and shadow."
             year="2025"
-            imageSrc="/assets/images/project-3.webp"
-            url="https://ctrl-build.com"
+            imageSrc="/assets/images/project-1.webp"
+            url="https://gaplens.com"
           />
           <WorkItem
             id="04"

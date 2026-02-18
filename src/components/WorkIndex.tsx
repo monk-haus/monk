@@ -7,11 +7,11 @@ import Link from "next/link";
 const archive = [
     {
         id: "01",
-        client: "GAPLENS",
-        category: "Fine Art Photography",
-        year: "2025",
-        slug: "gaplens",
-        image: "/assets/images/gaplens-work.webp",
+        client: "VAULT",
+        category: "Agentic Commerce",
+        year: "2026",
+        slug: "vault",
+        image: "/assets/images/vault-work.webp",
         status: "Public"
     },
     {
@@ -25,11 +25,11 @@ const archive = [
     },
     {
         id: "03",
-        client: "CTRL BUILD",
-        category: "Adversarial Engine",
+        client: "GAPLENS",
+        category: "Fine Art Photography",
         year: "2025",
-        slug: "ctrl-build",
-        image: "/assets/images/ctrl-build-work.webp",
+        slug: "gaplens",
+        image: "/assets/images/gaplens-work.webp",
         status: "Public"
     },
     {
@@ -48,6 +48,15 @@ const archive = [
         year: "2026",
         slug: "ife-inspires",
         image: "/assets/images/ifeinspires-work.webp",
+        status: "Public"
+    },
+    {
+        id: "06",
+        client: "CTRL BUILD",
+        category: "Adversarial Engine",
+        year: "2025",
+        slug: "ctrl-build",
+        image: "/assets/images/ctrl-build-work.webp",
         status: "Public"
     }
 ];
