@@ -36,9 +36,9 @@ const projects = [
             "/assets/images/project-2-2.webp",
             "/assets/images/project-2-3.webp"
         ],
-        services: ["Brand Strategy", "Digital Archive", "Boutique Experience", "Talent Management", "Editorial Direction"],
-        context: "The fashion industry is often reduced to a catalogue of disposable statistics. NAATH MODELS was founded to reject this mass-recruitment model. They required a digital vanguard—a boutique platform that functions as a high-fashion curation, prioritizing the development of careers with precision and longevity over sheer volume.",
-        outcome: "We built a quiet, high-contrast archive that mirrors the restraint of a physical darkroom. By utilizing a minimalist architectural grid and unpolished visual textures, we created a space where talent isn't just displayed, but nurtured. The experience is designed to be felt as a private viewing room—an editorial statement that honors the raw, unedited reality of the 'New Vanguard'."
+        services: ["Digital Strategy", "Interface Design", "Full-Stack Build", "Web Architecture", "Brand Identity"],
+        context: "NAATH MODELS is a boutique agency redefining talent management through the lens of longevity and precision. They required a digital vanguard—a boutique website that functions as a high-fashion curation, rejecting the mass-recruitment model of the industry in favor of a quiet, intentional digital archive.",
+        outcome: "We engineered a high-contrast digital boutique designed around the concept of a 'Private Viewing Room.' By utilizing a minimalist architectural grid, unpolished visual textures, and immersive motion systems—including fluid scroll-triggered filters and scale transitions—we created a space where talent is nurtured rather than just displayed. The result is a premium editorial statement that honors the raw reality of the 'New Vanguard.'"
     },
     {
         slug: "gaplens",
