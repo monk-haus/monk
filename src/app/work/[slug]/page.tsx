@@ -18,9 +18,9 @@ const projects = [
             "/assets/images/project-6-2.webp",
             "/assets/images/project-6-3.webp"
         ],
-        services: ["Product Strategy", "Interface Design", "Full-Stack Build", "Platform Architecture", "Agentic Systems"],
-        context: "Modern luxury retail is caught between two failures: bloated ERPs that treat inventory as spreadsheet rows, and glossy e-commerce that strips away the intimacy of the client relationship. VAULT was conceived as the rejection of both, a unified operating system that aligns the pace of inventory with the depth of the human connection.",
-        outcome: "We engineered a dual-interface platform: a command workspace for the store team and a curated, private-client portal that feels less like software and more like a personal concierge. By embedding agentic logic into every workflow, from trend sensing to clienteling, we created a system that doesn't just manage retail, but anticipates it. The result is a high-fidelity artifact for the next era of commerce."
+        services: ["Digital Strategy", "Interface Design", "Full-Stack Build", "Web Architecture", "Agentic Systems"],
+        context: "VAULT is the premier operating system for modern luxury retail, designed to align inventory velocity with the depth of human connection. They required a digital presence that mirrored the high-fidelity nature of their platform—an interface that could articulate the 'Agentic Shift' in commerce while maintaining the aesthetic restraint of a luxury house.",
+        outcome: "We engineered a high-performance marketing site and digital archive for VAULT. By utilizing a minimalist, grid-based architecture and immersive motion systems, we created a platform that demonstrates the power of agentic commerce. The result is a seamless, responsive experience that functions as the primary entry point for global luxury brands, distilling complex infrastructure into a clear, compelling digital narrative."
     },
     {
         slug: "naath-models",
