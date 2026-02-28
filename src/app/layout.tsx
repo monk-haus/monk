@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://monk.haus"),
+  metadataBase: new URL("https://www.monk.haus"),
   title: {
     default: "MONK | HAUS",
     template: "%s | MONK HAUS",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     "web development Craiova",
     "brand identity design",
   ],
-  authors: [{ name: "Monk Haus", url: "https://monk.haus" }],
+  authors: [{ name: "Monk Haus", url: "https://www.monk.haus" }],
   creator: "Monk Haus",
   publisher: "Monk Haus",
   robots: {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://monk.haus",
+    url: "https://www.monk.haus",
     title: "MONK | HAUS",
     description: "Digital artifact foundry. We ship code.",
     siteName: "MONK HAUS",
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: "https://monk.haus",
+    canonical: "https://www.monk.haus",
   },
 };
 
@@ -126,8 +126,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Monk Haus",
-              url: "https://monk.haus",
-              logo: "https://monk.haus/og-image.jpg",
+              url: "https://www.monk.haus",
+              logo: "https://www.monk.haus/og-image.jpg",
               description: "Digital artifact foundry based in Craiova. We build raw, friction-heavy web experiences.",
               sameAs: ["https://instagram.com/_monk.haus_"],
               address: {
