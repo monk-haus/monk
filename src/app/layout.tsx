@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     siteName: "MONK HAUS",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.monk.haus/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Monk Haus Digital Debris",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MONK | HAUS",
     description: "Digital artifact foundry. We ship code.",
-    images: ["/og-image.jpg"],
+    images: ["https://www.monk.haus/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
