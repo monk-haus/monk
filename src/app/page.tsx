@@ -7,14 +7,26 @@ export const metadata: Metadata = {
   description:
     "Digital artifact foundry based in Craiova. We build raw, friction-heavy web experiences. No templates. No cookies. Pure signal.",
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.monk.haus",
+    siteName: "MONK HAUS",
     title: "MONK | HAUS",
     description: "Digital artifact foundry. We ship code.",
-    url: "https://www.monk.haus",
+    images: [
+      {
+        url: "https://www.monk.haus/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Monk Haus Digital Debris",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "MONK | HAUS",
     description: "Digital artifact foundry. We ship code.",
+    images: ["https://www.monk.haus/og-image.jpg"],
   },
   alternates: {
     canonical: "https://monk.haus",
