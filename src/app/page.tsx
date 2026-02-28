@@ -10,11 +10,13 @@ export const metadata: Metadata = {
     title: "MONK | HAUS",
     description: "Digital artifact foundry. We ship code.",
     url: "https://monk.haus",
+    images: [{ url: "https://monk.haus/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "MONK | HAUS",
     description: "Digital artifact foundry. We ship code.",
+    images: ["https://monk.haus/og-image.jpg"],
   },
   alternates: {
     canonical: "https://monk.haus",
