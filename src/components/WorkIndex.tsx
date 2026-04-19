@@ -25,11 +25,11 @@ const archive = [
     },
     {
         id: "03",
-        client: "GAPLENS",
-        category: "Fine Art Photography",
-        year: "2025",
-        slug: "gaplens",
-        image: "/assets/images/gaplens-work.webp",
+        client: "PIXIESMITH",
+        category: "Fashion & Mysticism",
+        year: "2026",
+        slug: "pixiesmith",
+        image: "/assets/images/pixiesmith-work.webp",
         status: "Public"
     },
     {
@@ -57,6 +57,15 @@ const archive = [
         year: "2025",
         slug: "ctrl-build",
         image: "/assets/images/ctrl-build-work.webp",
+        status: "Public"
+    },
+    {
+        id: "07",
+        client: "GAPLENS",
+        category: "Fine Art Photography",
+        year: "2025",
+        slug: "gaplens",
+        image: "/assets/images/gaplens-work.webp",
         status: "Public"
     }
 ];

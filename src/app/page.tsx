@@ -129,12 +129,12 @@ export default function Home() {
           />
           <WorkItem
             id="03"
-            client="GAPLENS"
-            category="Fine Art Photography"
-            description="The architecture of silence. Capturing the tension between light and shadow."
-            year="2025"
-            imageSrc="/assets/images/project-1.webp"
-            url="https://gaplens.com"
+            client="PIXIESMITH"
+            category="Fashion & Mysticism"
+            description="Wearable symbols of transformation. 78 finite collections, then the studio closes."
+            year="2026"
+            imageSrc="/assets/images/pixiesmith-work.webp"
+            url="https://pixiesmith.studio"
           />
           <WorkItem
             id="04"

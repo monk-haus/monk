@@ -41,22 +41,22 @@ const projects = [
         outcome: "We engineered a high-contrast digital boutique designed around the concept of a 'Private Viewing Room.' By utilizing a minimalist architectural grid, unpolished visual textures, and immersive motion systems—including fluid scroll-triggered filters and scale transitions—we created a space where talent is nurtured rather than just displayed. The result is a premium editorial statement that honors the raw reality of the 'New Vanguard.'"
     },
     {
-        slug: "gaplens",
+        slug: "pixiesmith",
         id: "03",
-        client: "GAPLENS",
-        title: "The Architecture of Silence",
-        category: "Fine Art Photography",
-        year: "2025",
-        url: "https://gaplens.com",
-        mainImage: "/assets/images/gaplens-hero.webp",
+        client: "PIXIESMITH",
+        title: "The Handcrafted Web",
+        category: "Fashion & Mysticism",
+        year: "2026",
+        url: "https://pixiesmith.studio",
+        mainImage: "/assets/images/pixiesmith-hero.webp",
         detailImages: [
-            "/assets/images/project-1-1.webp",
-            "/assets/images/project-1-2.webp",
-            "/assets/images/project-1-3.webp"
+            "/assets/images/project-7-1.webp",
+            "/assets/images/project-7-2.webp",
+            "/assets/images/project-7-3.webp"
         ],
-        services: ["Creative Direction", "Web Architecture", "Visual Identity", "Interaction Design", "Full-Stack Build"],
-        context: "GapLens is a fine art photography studio dedicated to capturing the tension between material structure and ethereal light. They required an interface that behaved less like a website and more like a physical gallery—a space where the silence of the photography could be felt as much as seen.",
-        outcome: "We engineered a stark, high-contrast digital archive that prioritizes negative space over traditional navigation. By utilizing a grid system built on architectural ratios, we created a platform where each frame commands absolute focus. The user experience is intentionally slowed, forcing a deeper engagement with the textures of concrete and the geometry of shadow. The result is a digital artifact that honors the solemn purity of the GapLens lens."
+        services: ["Theme Architecture", "Interface Design", "Visual Identity", "Full-Stack Build", "Performance Engineering"],
+        context: "Pixiesmith is a high-fashion studio built on a countdown. Inspired by the 78 cards of the tarot deck, they produce exactly 78 finite collections—then close. Named for Pamela Coleman Smith, the uncredited artist behind the Rider-Waite deck whose work became one of the most reproduced images in history, the brand is a reclamation: of her name, her symbolism, and the idea that clothing can carry genuine consequence.",
+        outcome: "We built the pixiesmith-theme to hold the weight of that premise. The digital storefront needed to feel like an artifact in its own right—a space where mysticism and editorial restraint coexist without friction. By designing a custom theme architecture around intentional scarcity and symbolic typography, we created a platform that doesn't just sell garments but communicates their meaning. A finite brand deserves a site that feels like it was made to last exactly as long as it should."
     },
     {
         slug: "sort-lat",
@@ -111,6 +111,24 @@ const projects = [
         services: ["Interface Design", "Linguistic Engineering", "Brand Identity", "Adversarial Strategy", "Full-Stack Output"],
         context: "Artificial Intelligence is a statistical compression of the internet—a flattening of human expression into predictable patterns. CTRL BUILD is the rejection of that median. It functions as counter-surveillance, designed to deconstruct the algorithmic fingerprint of machine text and restore the irregular cadence of biological thought.",
         outcome: "We developed a clinical, industrial interface that mirrors the efficiency of a terminal while delivering complex semantic restructuring. By injecting variance—the 'bursts' and pauses of natural writing—we engineered an engine that doesn't just bypass detection, but elevates machine output into something fundamentally human. The result is a high-utility artifact for the modern informational war."
+    },
+    {
+        slug: "gaplens",
+        id: "07",
+        client: "GAPLENS",
+        title: "The Architecture of Silence",
+        category: "Fine Art Photography",
+        year: "2025",
+        url: "https://gaplens.com",
+        mainImage: "/assets/images/gaplens-hero.webp",
+        detailImages: [
+            "/assets/images/project-1-1.webp",
+            "/assets/images/project-1-2.webp",
+            "/assets/images/project-1-3.webp"
+        ],
+        services: ["Creative Direction", "Web Architecture", "Visual Identity", "Interaction Design", "Full-Stack Build"],
+        context: "GapLens is a fine art photography studio dedicated to capturing the tension between material structure and ethereal light. They required an interface that behaved less like a website and more like a physical gallery—a space where the silence of the photography could be felt as much as seen.",
+        outcome: "We engineered a stark, high-contrast digital archive that prioritizes negative space over traditional navigation. By utilizing a grid system built on architectural ratios, we created a platform where each frame commands absolute focus. The user experience is intentionally slowed, forcing a deeper engagement with the textures of concrete and the geometry of shadow. The result is a digital artifact that honors the solemn purity of the GapLens lens."
     }
 ];
 
