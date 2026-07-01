@@ -54,7 +54,7 @@ export const metadata: Metadata = {
       {
         url: "/og-image.jpg",
         width: 1200,
-        height: 653,
+        height: 630,
         alt: "Monk Haus — Website & Brand Identity Studio",
       },
     ],
@@ -68,8 +68,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
@@ -110,7 +110,7 @@ const jsonLd = {
       sameAs: ["https://www.instagram.com/_monk.haus_/"],
       logo: {
         "@type": "ImageObject",
-        url: `${siteUrl}/android-chrome-512x512.png`,
+        url: `${siteUrl}/web-app-manifest-512x512.png`,
         width: 512,
         height: 512,
       },
