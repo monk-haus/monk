@@ -1,11 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "./components/Header";
 
-const spaceGrotesk = Space_Grotesk({
+const acuminPro = localFont({
   variable: "--font-sans",
-  subsets: ["latin"],
+  display: "swap",
+  src: [
+    { path: "./fonts/AcuminPro-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/AcuminPro-Medium.woff2", weight: "500", style: "normal" },
+  ],
 });
 
 const siteUrl = "https://monk.haus";
@@ -130,7 +134,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={spaceGrotesk.variable}>
+    <html lang="en" className={acuminPro.variable}>
       <head>
         <script
           dangerouslySetInnerHTML={{
