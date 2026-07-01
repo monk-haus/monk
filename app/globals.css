@@ -1,26 +1,228 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --white: #fff;
+    --black: #000;
+
+    --bg: var(--white);
+    --fg: var(--black);
+    --muted: #8a8a8a;
+
+    --g: 1rem;
+    --m-x: 1rem;
+    --m-y: 1rem;
+    --c: calc((100vw - (var(--m-x) * 2 + var(--g) * 11)) / 12);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root.dark {
+    --bg: var(--black);
+    --fg: var(--white);
+    --muted: #6f6f6f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+    font-size: 0.694444vw;
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 13.33px;
+    }
+}
+
+@media (max-width: 842px) {
+    html {
+        font-size: clamp(9px, 2.4vw, 12px);
+    }
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans), sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--m-y) var(--m-x);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--g);
+    color: var(--fg);
+    z-index: 9997;
+    transition: color 0.4s ease;
+}
+
+#header>* {
+    flex: 0 0 auto;
+}
+
+#header> :not(#header-about) {
+    font-weight: 500;
+}
+
+#header-logo {
+    white-space: nowrap;
+}
+
+#header-time {
+    white-space: nowrap;
+}
+
+#header-about {
+    flex: 0 1 calc(var(--c) * 2 + var(--g));
+    max-width: calc(var(--c) * 2 + var(--g));
+    color: var(--muted);
+    transition: color 0.4s ease;
+}
+
+.h-link {
+    position: relative;
+    display: inline-block;
+}
+
+.h-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.15em;
+    width: 100%;
+    height: 0.08em;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.h-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+@media (max-width: 842px) {
+    #header {
+        flex-wrap: wrap;
+        gap: calc(var(--g) * 1.2);
+    }
+
+    #header-about {
+        flex-basis: 100%;
+        max-width: 60%;
+        order: 5;
+    }
+}
+
+.work {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 var(--m-x);
+}
+
+.work-header,
+.work-link {
+    display: grid;
+    grid-template-columns:
+        1.8rem minmax(0, calc(var(--c) * 4)) 1fr calc(var(--c) * 2.2) var(--c);
+    column-gap: var(--g);
+    align-items: baseline;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+}
+
+.work-header {
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+}
+
+.work-items {
+    list-style: none;
+}
+
+.work-row {
+    transition: opacity 0.3s ease;
+}
+
+.work-link {
+    padding: 0.42rem 0;
+}
+
+.work-link .work-title {
+    font-weight: 500;
+    color: var(--fg);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.work-num,
+.work-services,
+.work-year {
+    font-weight: 400;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.work-year {
+    text-align: right;
+}
+
+@media (hover: hover) {
+    .work-items:hover .work-row {
+        opacity: 0.28;
+    }
+
+    .work-items:hover .work-row:hover {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 842px) {
+
+    .work-header,
+    .work-link {
+        grid-template-columns: 1.8rem 1fr;
+    }
+
+    .work-spacer,
+    .work-services,
+    .work-year {
+        display: none;
+    }
 }
