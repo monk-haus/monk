@@ -16,7 +16,7 @@ const siteUrl = "https://monk.haus";
 const siteName = "Monk Haus";
 const siteTitle = "Monk Haus — Website & Brand Identity Studio";
 const siteDescription =
-  "Monk Haus is a boutique creative studio building custom websites and brand identities for fashion, art, and creative clients — built with Next.js, Shopify, and Sanity.";
+  "Monk Haus is a small studio for websites and brand identity. No static mockups, no endless revisions. We design live in the browser, so the site is the artifact.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
