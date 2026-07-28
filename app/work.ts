@@ -11,7 +11,6 @@ export const work: WorkItem[] = [
   { title: "Pixiesmith", url: "https://pixiesmith.studio", services: "Website", year: "2026" },
   { title: "Elvira Nisman", url: "https://elviranisman.com", services: "Website", year: "2026" },
   { title: "Lindsey Childs", url: "https://lindseychilds.com", services: "Website", year: "2026" },
-  { title: "Gaplens", url: "https://gaplens.com", services: "Website & Brand Identity", year: "2026" },
   { title: "Maya Law Practice", url: "https://mayalawpractice.com", services: "Website", year: "2026" },
   { title: "Naath Models", url: "https://naathmodels.com", services: "Website & Brand Identity", year: "2026" },
   { title: "Vault", url: "https://thevaulthq.io", services: "Website", year: "2026" },
