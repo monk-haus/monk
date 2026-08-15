@@ -8,6 +8,7 @@ export type WorkItem = {
 export const work: WorkItem[] = [
   { title: "Samuel Bristow", url: "https://samuelbristow.com", services: "Website", year: "2026" },
   { title: "Anders Sølvsten Thomsen", url: "https://anderssoelvstenthomsen.com", services: "Website", year: "2026" },
+  { title: "Dragonflower", url: "https://dragonflower.studio", services: "Website", year: "2026" },
   { title: "Pixiesmith", url: "https://pixiesmith.studio", services: "Website", year: "2026" },
   { title: "Elvira Nisman", url: "https://elviranisman.com", services: "Website", year: "2026" },
   { title: "Ethan O’Grady", url: "https://www.ethanogrady.com", services: "Website", year: "2026" },
