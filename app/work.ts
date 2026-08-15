@@ -19,5 +19,6 @@ export const work: WorkItem[] = [
   { title: "Vault", url: "https://thevaulthq.io", services: "Website", year: "2026" },
   { title: "sort.lat", url: "https://sort.lat", services: "Website & Brand Identity", year: "2026" },
   { title: "Ife Inspires", url: "https://ifeinspires.com", services: "Website", year: "2026" },
+  { title: "Anda Stanu", url: "https://andastanu.com", services: "Website", year: "2026" },
   { title: "Ctrl Build", url: "https://ctrl-build.com", services: "Website & Brand Identity", year: "2025" },
 ];
