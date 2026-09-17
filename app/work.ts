@@ -13,6 +13,8 @@ export const work: WorkItem[] = [
   { title: "Elvira Nisman", url: "https://elviranisman.com", services: "Website", year: "2026" },
   { title: "Ethan O’Grady", url: "https://www.ethanogrady.com", services: "Website", year: "2026" },
   { title: "Brendan Wixted", url: "https://brendanwixted.com", services: "Website", year: "2026" },
+  { title: "Lewis Stratton", url: "https://www.lewisstratton.com", services: "Website", year: "2026" },
+  { title: "Sofiane Lahcen", url: "https://sofianelahcen.com", services: "Website", year: "2026" },
   { title: "Nina Raasch", url: "https://www.ninaraasch.com", services: "Website", year: "2026" },
   { title: "Lindsey Childs", url: "https://lindseychilds.com", services: "Website", year: "2026" },
   { title: "Maya Law Practice", url: "https://mayalawpractice.com", services: "Website", year: "2026" },
