@@ -3,13 +3,15 @@ export type WorkItem = {
   url: string;
   services: string;
   year: string;
+  featured?: boolean;
 };
 
 export const work: WorkItem[] = [
-  { title: "Samuel Bristow", url: "https://samuelbristow.com", services: "Website", year: "2026" },
-  { title: "Anders Sølvsten Thomsen", url: "https://anderssoelvstenthomsen.com", services: "Website", year: "2026" },
-  { title: "Francis Boissier", url: "https://francisboissier.com", services: "Website", year: "2026" },
-  { title: "Dragonflower", url: "https://dragonflower.studio", services: "Website", year: "2026" },
+  { title: "Samuel Bristow", url: "https://samuelbristow.com", services: "Website", year: "2026", featured: true },
+  { title: "Anders Sølvsten Thomsen", url: "https://anderssoelvstenthomsen.com", services: "Website", year: "2026", featured: true },
+  { title: "Francis Boissier", url: "https://francisboissier.com", services: "Website", year: "2026", featured: true },
+  { title: "Dragonflower", url: "https://dragonflower.studio", services: "Website", year: "2026", featured: true },
+  { title: "Seventy One Gin", url: "https://seventyonegin.com", services: "Website", year: "2026", featured: true },
   { title: "Pixiesmith", url: "https://pixiesmith.studio", services: "Website", year: "2026" },
   { title: "Elvira Nisman", url: "https://elviranisman.com", services: "Website", year: "2026" },
   { title: "Ethan O’Grady", url: "https://www.ethanogrady.com", services: "Website", year: "2026" },
@@ -18,11 +20,11 @@ export const work: WorkItem[] = [
   { title: "Sofiane Lahcen", url: "https://sofianelahcen.com", services: "Website", year: "2026" },
   { title: "Nina Raasch", url: "https://www.ninaraasch.com", services: "Website", year: "2026" },
   { title: "Lindsey Childs", url: "https://lindseychilds.com", services: "Website", year: "2026" },
+  { title: "Francesco Scotti", url: "https://francescoscottiuniverse.com", services: "Website", year: "2026" },
   { title: "Maya Law Practice", url: "https://mayalawpractice.com", services: "Website", year: "2026" },
   { title: "Naath Models", url: "https://naathmodels.com", services: "Website & Brand Identity", year: "2026" },
   { title: "Vault", url: "https://thevaulthq.io", services: "Website", year: "2026" },
   { title: "sort.lat", url: "https://sort.lat", services: "Website & Brand Identity", year: "2026" },
   { title: "Ife Inspires", url: "https://ifeinspires.com", services: "Website", year: "2026" },
   { title: "Anda Stancu", url: "https://andastancu.com", services: "Website", year: "2026" },
-  { title: "Ctrl Build", url: "https://ctrl-build.com", services: "Website & Brand Identity", year: "2025" },
 ];
